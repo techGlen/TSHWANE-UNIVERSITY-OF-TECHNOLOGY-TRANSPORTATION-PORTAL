@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+font-family: 'Open Sans', sans-serif;
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-color: skyblue;
+}
+
+li,a{
+
+	font-family: 'Open Sans',sans-serif;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	color: #556B2F;
+
+	text-decoration: none;
+}
+
+header{
+	margin-top: -10;
+	background-image: linear-gradient(#66CDAA,#D2B48C);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 8%;
+
+}
+
+.nav-links{
+
+	transition: all 0.2s ease 0s;
+}
+
+.nav-links li{
+
+	display: inline-block;
+	padding: 0px 63px;
+}
+.nav-links li a: hover{
+	color: #483D8B;
+}
+
+/* start=this is for background video*/
+.bvid{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+
+}
+@media (min-aspect-ratio: 16/9){
+	.bvid{
+		width: 100%;
+		height: auto;
+	}
+
+
+}
+@media (max-aspect-ratio: 16/9){
+	.bvid{
+		width: auto;
+		height: 100%;
+	}
+
+
+}
+/* End=this is for background video/ picture animiation*/
+
+/* start=logistics*/
+
+.logistics_p{
+ font-size:20;
+ font-family: 'Open Sans',sans-serif;
+ color:#FF0000;
+ /* color: #8B0000;*/
+
+}
+
+.content{
+	font-size:26;
+	text-transform: uppercase;
+	color:#FF0000;
+}
+
+.Transport-display{
+	width: 490px;
+	height: 100vh;
+	display: flex;
+	position: absolute;
+	left: 21%;
+	top: 56%;
+	transform: translate(-50%,-50%);
+	background-image:url(logistics-00.jpg);
+	clip-path: circle();
+	background-repeat: no-repeat;
+	justify-content: center;
+	background-size: 100% 100%;
+	animation: change 10s infinite ease-in-out;
+}
+
+@keyframes change{
+	0%{background-image:url(logistics-1.jpeg);}
+
+	20%{background-image:url(logistics-2.jpeg);}
+
+	40%{background-image:url(logistics-3.jpeg);}
+
+	60%{background-image:url(logistics-4.jpeg);}
+
+	80%{background-image:url(logistics-5.jpeg);}
+
+	100%{background-image:url(logistics-6.jpeg);}
+}
+
+
+
+
+/*  contantact purpose */
+.contact{
+	width: 80%;
+	height: 1000px;
+	position: absolute;
+	left: 5%;
+	top: 40%;
+	color:#FF0000;
+
+
+}
+
+//
+
+table th{
+
+	text-align: left;
+	background-color: #CD5C5CF;
+	padding: 4px;
+	text-transform: uppercase;
+	color:#FF0000;
+}
+
+table td{
+border:1px solid #e3e3e3 ;
+padding: 4px 8px;
+background-color: #CD5C5CF;
+
+ }
+
+ .terms {
+
+    font-family: 'Open Sans',sans-serif;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	color: black;
+ }
+
+
+ /*statis9tics*/
+
+ .Soshanguve{
+ 	background-color: #347C17;
+ 	color: #0C090A;
+ }
+ .MainCumpus{
+ 	background-color:#808080;
+ 	color: #00008B;
+ }
+ .GaRankuwa{
+ 	background-color: #66CDAA;
+ 	color: #FF0000;
+ }
+
+ .Acardia{
+ 	background-color: #A1C935;
+ 	color: #3B2F2F;
+ }
+
+ /* last part*/
+.Welcome{
+
+	font-size:16.5;
+	text-transform: uppercase;
+	color:#FF0000;
+	left: 42%;
+	width: 80%;
+	height: 1000px;
+	position: absolute;
+	top: 20%;
+
+}

@@ -1,0 +1,261 @@
+<!doctype ><html  lang="en"><head><title>Transport Booking</title>
+	   <meta charset="utf-8">
+	   <meta http-equiv="">
+	   <meta name="viewport" content="user-scalable=no,width=device-width"/>
+	
+		
+		<link rel="stylesheet" type="text/css" href="Transport_css.css">
+		<script type="text/javascript" src="transManipulation.js"></script>
+
+
+	</head>
+	<body>
+		<video autoplay loop muted plays-inline class="bvid"><source src="C:\Users\pc\Desktop\Web_Mine\MTJT\background.mp4"type="video/mp4"></video>
+		<header>
+			
+			<nav>
+				<ul class="nav-links">
+					<li><a href="Transport_main.html">Home</li>
+       			<li><a href="transTable.html">BUS SHCEDULE</a></li>
+        			<li><a href="#">contact</a></li>	
+				</ul>
+			</nav>
+		</header>		
+
+		<div class="content"><h2> TUT TRANSPORTATION</h2>
+		
+		
+		<h3>It's important to book a seat in order to determine number of bus required </h3></div>
+		
+		<form class="terms">
+
+			<fieldset class="filldata">
+
+				<legend align="left" style="text-transform: uppercase;font-size:2em">Data Required For Bookings</legend>
+
+				<label for="NamNum"> Student Number:</label>
+				  <input type="text"  id="NamNum" name= "user_name" value="" size="23" class="form-control" placeholder="216892500 eg"><br><br>
+
+				<label for="surname">Init &  Surname : </label>
+				<input type="text" size="23" id="surname" name="student-sur" value="" class="form-control" placeholder="MG tech@tlomi eg"><br><br>
+
+				<label >Choose Location</label>
+				<select id="location" >
+					<option value="Choose Location">Choose Location</option>
+					<option value="Soshanguve to Main Cumpus" >Soshanguve to Main Cumpus</option>
+					<option value="Soshanguve to Ga Rankuwa" >Soshanguve to Ga Rankuwa</option>
+					<option value="Soshanguve to Acardia" >Soshanguve to Acardia</option>
+					
+
+					<option value="Main Cumpus to Soshanguve">Main Cumpus to Soshanguve</option>
+					<option value="Main Cumpus to Ga Rankuwa">Main Cumpus to Ga Rankuwa</option>
+					<option value="Main Cumpus to Acardia">Main Cumpus to Acardia</option>
+					
+
+					<option value="Ga Rankuwa to Soshanguve" > Ga Rankuwa to Soshanguve</option>
+					<option value="Ga Rankuwa to Main Cumpus" > Ga Rankuwa to Main Cumpus</option>
+					<option value="Ga Rankuwa to Acardia" >Ga Rankuwa to Acardia</option>
+					
+
+					<option value="Acardia to Soshanguve">Acardia to Soshanguve</option>
+					<option value="Acardia to Main Cumpus">Acardia to Main Cumpus</option>
+					<option value="Acardia to Ga Rankuwa">Acardia to Ga Rankuwa</option>
+				
+				</select><br><br>
+
+                <label >Choose Valid Time:</label>
+				<select id="time">
+					<option value="Select Time">Select Time</option>
+					1<option value="6:00  AM">6:00  AM</option>
+					2<option value="11:00 AM">11:00 AM</option>
+					3<option value="16:00 PM">16:00 PM</option>
+					
+				</select><br><br>
+
+				<input type="button" value="submit booking" onclick="submit_C()">
+			</fieldset>
+		</form>
+		<div class="terms">
+
+			<h1 >Terms & Conditions</h1>
+			<ul >
+				<li>The student must complete this form at least 30 minutes before. </li>
+				<li>It's important to cancel 10 minutes before </li>
+				<li>If not cancel student will be charged R10 </li>
+				<li>Student must book once for a single trip</li>
+					
+			</ul><br>
+		</div>
+<!-- Soshanguve-->
+	<fieldset class="Soshanguve">
+		<legend align="left" style="text-transform: uppercase;font-size:2em"> SOSHANGUVE STATISTICS TO OTHER COMPUSES</legend><br>
+
+		<fieldset>
+			<legend align="left" style="text-transform: uppercase;font-size:1em">Number of students from Soshanguve to Main Cumpus</legend><br>
+				<label >06:00AM is :</label>students.
+				<input type="text" size="10" id="sumSMc6" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >11:00AM is :</label>students.
+				<input type="text" size="10" id="sumSMc11" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >16:00AM is :</label>students.
+				<input type="text" size="10" id="sumSMc16" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+		</fieldset><br><br>
+
+		<fieldset>
+			<legend align="left" style="text-transform: uppercase;font-size:1em">Number of students from Soshanguve to Ga Rankuwa</legend><br>
+				<label >06:00AM is :</label>students.
+				<input type="text" size="10" id="sumSGa6" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >11:00AM is :</label>students.
+				<input type="text" size="10" id="sumSGa11" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >16:00AM is :</label>students.
+				<input type="text" size="10" id="sumSGa16" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+		</fieldset><br><br>
+		
+
+		<fieldset>
+			<legend align="left" style="text-transform: uppercase;font-size:1em">Number of students from Soshanguve to Acardia</legend><br>
+				<label >06:00AM is :</label>students.
+				<input type="text" size="10" id="sumSAc6" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >11:00AM is :</label>students.
+				<input type="text" size="10" id="sumSAc11" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >16:00AM is :</label>students.
+				<input type="text" size="10" id="sumSAc16" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+		</fieldset><br><br><br>
+
+	</fieldset><br><br><br>
+<!-- Main Cumpus-->
+
+	<fieldset class="MainCumpus">
+		<legend align="left" style="text-transform: uppercase;font-size:2em">Main Cumpus STATISTICS TO OTHER COMPUSES</legend><br>
+
+		<fieldset>
+			<legend align="left" style="text-transform: uppercase;font-size:1em">Number of students from Main Cumpus to Soshanguve</legend><br>
+				<label >06:00AM is :</label>students.
+				<input type="text" size="10" id="addSMc6" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >11:00AM is :</label>students.
+				<input type="text" size="10" id="addSMc11" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >16:00AM is :</label>students.
+				<input type="text" size="10" id="addSMc16" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+		</fieldset><br><br>
+
+		<fieldset>
+			<legend align="left" style="text-transform: uppercase;font-size:1em">Number of students from Main Cumpus to Ga Rankuwa</legend><br>
+				<label >06:00AM is :</label>students.
+				<input type="text" size="10" id="addSGa6" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >11:00AM is :</label>students.
+				<input type="text" size="10" id="addSGa11" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >16:00AM is :</label>students.
+				<input type="text" size="10" id="addSGa16" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+		</fieldset><br><br>
+		
+
+		<fieldset>
+			<legend align="left" style="text-transform: uppercase;font-size:1em">Number of students from Main Cumpus to Acardia</legend><br>
+				<label >06:00AM is :</label>students.
+				<input type="text" size="10" id="addSAc6" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >11:00AM is :</label>students.
+				<input type="text" size="10" id="addSAc11" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >16:00AM is :</label>students.
+				<input type="text" size="10" id="addSAc16" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+		</fieldset><br><br><br>
+
+	</fieldset><br><br>
+
+
+
+	<!-- Ga Rankuwa-->
+
+	<fieldset class="GaRankuwa">
+		<legend align="left" style="text-transform: uppercase;font-size:2em">Ga Rankuwa STATISTICS TO OTHER COMPUSES</legend><br>
+
+		<fieldset>
+			<legend align="left" style="text-transform: uppercase;font-size:1em">Number of students from Ga Rankuwa to Soshanguve</legend><br>
+				<label >06:00AM is :</label>students.
+				<input type="text" size="10" id="countSMc6" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >11:00AM is :</label>students.
+				<input type="text" size="10" id="countSMc11" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >16:00AM is :</label>students.
+				<input type="text" size="10" id="addSMc16" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+		</fieldset><br><br>
+
+		<fieldset>
+			<legend align="left" style="text-transform: uppercase;font-size:1em">Number of students from Ga Rankuwa to Main Cumpus</legend><br>
+				<label >06:00AM is :</label>students.
+				<input type="text" size="10" id="countSGa6" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >11:00AM is :</label>students.
+				<input type="text" size="10" id=countSGa11" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >16:00AM is :</label>students.
+				<input type="text" size="10" id="countSGa16" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+		</fieldset><br><br>
+		
+
+		<fieldset>
+			<legend align="left" style="text-transform: uppercase;font-size:1em">Number of students from Ga Rankuwa to Acardia</legend><br>
+				<label >06:00AM is :</label>students.
+				<input type="text" size="10" id="countSAc6" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >11:00AM is :</label>students.
+				<input type="text" size="10" id="countSAc11" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >16:00AM is :</label>students.
+				<input type="text" size="10" id="countSAc16" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+		</fieldset><br><br><br>
+
+	</fieldset><br><br>
+
+
+	<!-- Acardia-->
+
+
+	<fieldset class="Acardia">
+		<legend align="left" style="text-transform: uppercase;font-size:2em">Acardia STATISTICS TO OTHER COMPUSES</legend><br>
+
+		<fieldset>
+			<legend align="left" style="text-transform: uppercase;font-size:1em">Number of students from Acardia to Soshanguve</legend><br>
+				<label >06:00AM is :</label>students.
+				<input type="text" size="10" id="appendSMc6" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >11:00AM is :</label>students.
+				<input type="text" size="10" id="appendSMc11" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >16:00AM is :</label>students.
+				<input type="text" size="10" id="appendSMc16" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+		</fieldset><br><br><br><br>
+
+		<fieldset>
+			<legend align="left" style="text-transform: uppercase;font-size:1em">Number of students from Acardia to Main Cumpus</legend><br>
+				<label >06:00AM is :</label>students.
+				<input type="text" size="10" id="appendSGa6" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >11:00AM is :</label>students.
+				<input type="text" size="10" id="appendSGa11" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >16:00AM is :</label>students.
+				<input type="text" size="10" id="appendSGa16" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+		</fieldset><br><br><br><br>
+		
+
+		<fieldset>
+			<legend align="left" style="text-transform: uppercase;font-size:1em">Number of students from Acardia to Ga Rankuwa</legend><br>
+				<label >06:00AM is :</label>students.
+				<input type="text" size="10" id="appendSAc6" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >11:00AM is :</label>students.
+				<input type="text" size="10" id="appendSAc11" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+				<label >16:00AM is :</label>students.
+				<input type="text" size="10" id="appendSAc16" name="student-sur" value="" class="form-control" placeholder="0">students<br><br>
+		</fieldset><br><br><br><br>
+
+	</fieldset>
+
+
+
+
+
+
+
+
+	<h2>You Can Cancel Your Trip here</h2><br><br>
+
+
+
+	<label for="NamNumCancel"> Student Number:</label><br>
+	<input type="text"  id="NamNumCancel" name= "user_name"  size="40" class="form-control">
+	<input type="button" value="Cancel Your Booking" onclick="delete_C()">
+	</body>
+		<select id="time">
+					
+	
+</html>
